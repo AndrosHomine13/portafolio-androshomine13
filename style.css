@@ -135,7 +135,6 @@ header a:hover {
 /* Botones */
 .btn {
   display: inline-block;
-  margin-top: 1.5rem;
   margin: 12px;
   padding: 0.9rem 1.8rem;
   background: #00ff88;
@@ -145,6 +144,8 @@ header a:hover {
   border-radius: 30px;
   transition: all 0.3s ease;
   box-shadow: 0 0 10px rgba(0,255,136,0.6);
+  min-width: 150px;
+  max-width: 250px;
 }
 
 .btn:hover {
@@ -239,4 +240,18 @@ footer {
   padding: 1rem;
   font-size: 0.9rem;
   border-top: 2px solid #222;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 600px) {
+  .btn {
+    width: 80%;
+    max-width: none;
+    font-size: 1rem;
+    padding: 0.8rem 1.2rem;
+  }
+
+  header nav ul {
+    display: none;
+  }
 }
