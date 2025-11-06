@@ -1,163 +1,130 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portafolio - AndrosHomine13</title>
-
-  <!-- Iconos y Fuentes -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <!-- Animaciones AOS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-
-  <!-- Estilos -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <!-- Header / Navbar -->
+  <!-- Header -->
   <header>
     <nav>
-      <h1>AndrosHomine13</h1>
-      <ul>
+      <div class="brand">AndrosHomine13</div>
+      <ul class="nav-list">
         <li><a href="#proyectos">Proyectos</a></li>
         <li><a href="#sobre-mi">Sobre mí</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
+      <button class="nav-toggle" aria-label="Abrir menú">☰</button>
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1 data-aos="fade-up">¡Hola! Soy <br>
-      <span class="resaltado">AndrosHomine13</span>
-    </h1>
-  
-    <p data-aos="fade-up" data-aos-delay="200">
-      Soy <strong>desarrollador web creativo</strong> y <strong>programador en Python</strong>, apasionado por 
-      transformar ideas en <em>experiencias digitales</em>.  
-      Me encanta construir desde páginas web modernas y blogs interactivos, hasta sistemas 
-      personalizados de ventas e inventario que facilitan la vida de las personas.
-    </p>
-  
-    <p data-aos="fade-up" data-aos-delay="400">
-      🚀 Mi enfoque está en crear soluciones <strong>visuales, funcionales y seguras</strong>, 
-      siempre buscando innovar y dejar un toque único en cada proyecto.  
-      Si buscas creatividad con tecnología, estás en el lugar correcto. ✨
-    </p>
-  
-    <div class="hero-buttons" data-aos="zoom-in" data-aos-delay="600">
-      <a href="#proyectos" class="btn">🚀 Ver mis proyectos</a>
-      <a href="#contacto" class="btn secundario">📩 Hablemos</a>
-    </div>
-  </section>
-
-  <!-- Proyectos -->
-  <section id="proyectos">
-    <h2 data-aos="fade-right">🚀 Proyectos Profesionales</h2>
-    <div class="grid">
-      <div class="card" data-aos="flip-left">
-        <h3>Emprendimiento Divina Revelación</h3>
-        <p>
-            Página web profesional para un emprendimiento de joyería y accesorios, diseñada para transmitir
-            una estética elegante y facilitar las ventas directas. El sistema permite a la emprendedora
-            gestionar su catálogo de productos de forma autónoma: <strong>publicar, editar y eliminar</strong>
-            artículos sin necesidad de intervención técnica, con imágenes, descripción y precio.
-        </p>
-        <a href="https://divina-revelacion.netlify.app/" target="_blank">Ver</a>
+  <!-- Hero -->
+  <main>
+    <section id="hero" class="hero">
+      <h1>¡Hola! Soy <span>AndrosHomine13</span></h1>
+      <p class="lead">Desarrollador web creativo y programador en Python. Transformo ideas en experiencias digitales.</p>
+      <div class="cta">
+        <a href="#proyectos" class="btn outline">🚀Ver proyectos</a>
+        <a href="#contacto" class="btn outline">✉️Contacto</a>
       </div>
-      <div class="card" data-aos="flip-right">
-        <h3>Blog de Psicología</h3>
-        <p>
-            Plataforma digital enfocada en la publicación de artículos profesionales sobre psicología. 
-            Permite a la autora <strong>compartir reflexiones, experiencias e investigaciones con un diseño cálido, 
-            accesible y totalmente personalizable</strong>. El sitio está optimizado para la lectura en cualquier dispositivo 
-            y fue desplegado en la nube, garantizando estabilidad y fácil actualización de contenidos.
-        </p>
-        <a href="https://sofiaparedespsi.netlify.app/" target="_blank">Ver</a>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="proyectos">
+      <h2>🚀Proyectos profesionales</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Emprendimiento Divina Revelación</h3>
+          <p>Página web profesional para un emprendimiento de joyería y accesorios,
+            diseñada para transmitir una estética elegante y facilitar las ventas directas.
+            El sistema permite a la emprendedora subir el pdf del catálogo y automáticamente
+            el sistema lo gestiona.
+          </p>
+          <a href="https://divina-revelacion.netlify.app/" class="link" target="_blank">Ver</a>
+        </article>
+
+        <article class="card">
+          <h3>Blog de Psicología</h3>
+          <p>Plataforma digital diseñada para reflejar la conexión entre mente,
+            cuerpo y movimiento. Ofrece información sobre los servicios psicológico.
+            El sitio combina un diseño cálido, moderno y accesible, con secciones que
+            explican su metodología, experiencia y medios de contacto, incluyendo un
+            formulario y acceso directo a Whatsapp.
+          </p>
+          <a href="https://sofiaparedespsi.netlify.app/" class="link" target="_blank">Ver</a>
+        </article>
       </div>
-    </div>
+    </section>
+    <section id="proyectos" class="proyectos">
+      <h2>🎨 Proyectos Creativos</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>💖 San Valentín</h3>
+          <p>Página interactiva con botones divertidos que huyen.</p>
+          <a href="https://androshomine13.github.io/Valentine-s-day/" class="link" target="_blank">Ver</a>
+        </article>
 
-    <h2 data-aos="fade-right" style="margin-top:3rem;">🎨 Proyectos Creativos</h2>
-    <div class="grid">
-      <div class="card" data-aos="zoom-in">
-        <h3>💖 San Valentín</h3>
-        <p>Página interactiva con botones divertidos que huyen.</p>
-        <a href="https://androshomine13.github.io/Valentine-s-day/" target="_blank">Ver</a>
+        <article class="card">
+          <h3>👶 Revelación de embarazo</h3>
+          <p>Página personalizada para anunciar el embarazo a la familia.</p>
+          <a href="https://androshomine13.github.io/Regalo/" class="link" target="_blank">Ver</a>
+        </article>
+
+        <article class="card">
+          <h3>🎂 Cumpleaños de amigos/as y familiares</h3>
+          <p>Páginas interactivas y divertidas para celebrar cumpleaños.</p>
+          <a href="https://androshomine13.github.io/cumple-1/" class="link" target="_blank">Ver 1</a>
+          <a href="https://androshomine13.github.io/cumple-2/" class="link" target="_blank">Ver 2</a>
+        </article>
+
+        <article class="card">
+          <h3>🪐 Saturno Animado</h3>
+          <p>Animación de Saturno dedicada.</p>
+          <a href="https://androshomine13.github.io/saturn/" class="link" target="_blank">Ver</a>
+        </article>
+
+        <article class="card">
+          <h3>🎉 Cumpleaños de pareja</h3>
+          <p>Página personalizada con animaciones y dedicatoria especial.</p>
+          <a href="https://androshomine13.github.io/regalo_novia/" class="link" target="_blank">Ver</a>
+        </article>
       </div>
+    </section>
 
-      <div class="card" data-aos="zoom-in">
-        <h3>👶 Revelación de embarazo</h3>
-        <p>Página personalizada para anunciar el embarazo a la familia.</p>
-        <a href="https://androshomine13.github.io/Regalo/" target="_blank">Ver</a>
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="sobre-mi">
+      <h2>👨‍💻Sobre mí</h2>
+      <p>Soy <span>Andrés Vargas</span>, estudiante de ingeniería electrónica, apasionado
+        de la tecnología y el desarrollo web. Me encanta crear soluciones digitales que combinen
+        diseño atractivo y funcionalidad, desde landing pages creativas hasta sistemas personalizados
+        que resuelven problemas reales.
+      </p>
+      <p>Manejo principalmente <strong>Python</strong>, <strong>Javascript</strong>, ademas de 
+        <strong>HTML</strong> y <strong>CSS</strong>.
+      </p>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto">
+      <h2>✉️Contacto</h2>
+      <p>Puedes escribirme directamente a mis redes sociales:</p>
+      <div class="socials">
+        <a href="https://wa.me/573208443961" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://github.com/AndrosHomine13" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://x.com/androshomine13" target="_blank"><i class="fab fa-x"></i></a>
+        <a href="https://instagram.com/andros_homine13" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:andres2005vargas@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
       </div>
-
-      <div class="card" data-aos="zoom-in">
-        <h3>🎂 Cumpleaños de amigos/as y familiares</h3>
-        <p>Páginas interactivas y divertidas para celebrar cumpleaños.</p>
-        <a href="https://androshomine13.github.io/cumple-1/" target="_blank">Ver idea 1</a> | 
-        <a href="https://androshomine13.github.io/cumple-2/" target="_blank">Ver idea 2</a>
-      </div>
-
-      <div class="card" data-aos="zoom-in">
-        <h3>🪐 Saturno Animado</h3>
-        <p>Animación de Saturno dedicada.</p>
-        <a href="https://androshomine13.github.io/saturn/" target="_blank">Ver</a>
-      </div>
-
-      <div class="card" data-aos="zoom-in">
-        <h3>🎉 Cumpleaños de pareja</h3>
-        <p>Página personalizada con animaciones y dedicatoria especial.</p>
-        <a href="https://androshomine13.github.io/regalo_novia/" target="_blank">Ver</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sobre mí -->
-  <section id="sobre-mi" class="sobre-mi" data-aos="fade-up">
-    <h2>👨‍💻 Sobre mí</h2>
-    <p>
-      Soy <strong>Andrés Vargas (AndrosHomine13)</strong>, estudiante de ingeniería electrónica, un apasionado de la <strong>tecnología</strong> y el 
-      <strong>desarrollo web</strong>. Me encanta crear soluciones digitales que combinen diseño atractivo y 
-      funcionalidad, desde <em>landing pages creativas</em> hasta <em>sistemas personalizados</em> que resuelven problemas reales.
-    </p>
-    <p>
-      Manejo principalmente <strong>Python</strong>, <strong>Flask</strong> y <strong>JavaScript</strong>, además de HTML y CSS para 
-      dar vida a experiencias dinámicas. También disfruto experimentar con proyectos personales que mezclan 
-      programación, creatividad y un poco de storytelling 🎨✨.
-    </p>
-    <p>
-      Cuando no estoy programando, me gusta aprender sobre <strong>ciberseguridad</strong>, 
-      explorar nuevas ideas, bailar Breaking 🎶 y compartir momentos con mis seres queridos.
-    </p>
-  </section>
-
-  <!-- Contacto -->
-  <section id="contacto">
-    <h2>📩 Contacto</h2>
-    <p>Puedes escribirme directamente a mis redes sociales.</p>
-
-    <div class="social-icons">
-      <a href="https://wa.me/573208443961" target="_blank"><i class="fab fa-whatsapp"></i></a>
-      <a href="https://github.com/AndrosHomine13" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://x.com/androshomine13" target="_blank"><i class="fab fa-x-twitter"></i></a>
-      <a href="mailto:andres2005vargas@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Desarrollado por Andrés Vargas. Todos los derechos reservados.</p>
+    <p>© <span id="year"></span>Andrés Vargas. Todos los derechos reservados.</p>
   </footer>
-
-  <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1000,
-      once: true
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
